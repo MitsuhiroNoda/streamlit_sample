@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 # タイトル
 st.title("社会情報プロジェクト実習I")
@@ -9,7 +10,7 @@ st.write("テキストの練習")
 
 # 画像
 from PIL import Image 
-image = Image.open("study/apps/data/fig01.png")
+image = Image.open("data/fig01.png")
 st.image(image)
 
 # テキストボックス
