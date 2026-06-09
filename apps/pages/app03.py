@@ -1,5 +1,5 @@
 import streamlit as st
-import os
+from pathlib import Path
 
 # タイトル
 st.title("社会情報プロジェクト実習I")
@@ -24,5 +24,6 @@ with col2: # ２列目の領域
 
     # 画像
     from PIL import Image 
-    image = Image.open("data/fig01.png")
+    img_path = Path(__file__).parent.parent / "data" / "fig01.png"
+    image = Image.open(img_path)
     st.image(image)
