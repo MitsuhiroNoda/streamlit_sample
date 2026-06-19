@@ -10,8 +10,10 @@ st.write("テキストの練習")
 
 # 画像
 from PIL import Image 
-img_path = Path(__file__).parent.parent / "data" / "fig01.png"
-image = Image.open(img_path)
+#img_path = Path(__file__).parent.parent / "data" / "fig01.png"
+#image = Image.open(img_path)
+image = Image.open("apps/data/fig01.png")
+
 st.image(image)
 
 # テキストボックス
